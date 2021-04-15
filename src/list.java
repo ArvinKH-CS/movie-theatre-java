@@ -76,7 +76,6 @@ public class list {
     movies.add(knivesOut);
     movies.add(tenet);
     movies.add(joker);
-    System.out.println(movies);
 
     }
 }
