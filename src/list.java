@@ -85,7 +85,7 @@ public class list {
 
             for(int i = 0; i < movies.size(); i++) {
                 System.out.println("---------------------------------");
-                System.out.println(i+1 + ". " + movies.get(i).toString());
+                System.out.println(i+1 + ". " + movies.get(i).toString().replace("[", "").replace("]", ""));
             }
 
             System.out.println("Please choose the movie you'd like to view.");
@@ -93,7 +93,7 @@ public class list {
             Scanner userChoice = new Scanner(System.in);
             int movieChoice = userChoice.nextInt();
 
-            System.out.println("Your choice is: " + movies.get(movieChoice-1).toString());
+            System.out.println("Your choice is: " + movies.get(movieChoice-1).toString().replace("[", "").replace("]", ""));
             System.out.println("Is that correct?");
 
             System.out.println("1. Yes");
@@ -105,7 +105,7 @@ public class list {
                     System.out.println("Please choose the movie you'd like to view.");
                     movieChoice = userChoice.nextInt();
 
-                    System.out.println("Your choice is: " + movies.get(movieChoice-1).toString());
+                    System.out.println("Your choice is: " + movies.get(movieChoice-1).toString().replace("[", "").replace("]", ""));
                     System.out.println("Is that correct?");
 
                     System.out.println("1. Yes");
